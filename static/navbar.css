@@ -1,0 +1,26 @@
+html {
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.45rem 1.5rem 0.35rem;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f5cd71;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(241, 193, 37),
+    rgb(222, 153, 4)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(241, 193, 37, 1),
+    rgba(222, 153, 4, 1)
+  );
+}
