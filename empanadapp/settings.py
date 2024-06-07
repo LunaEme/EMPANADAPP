@@ -76,8 +76,15 @@ WSGI_APPLICATION = 'empanadapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',  
+        'NAME': 'EmpanadaFranchise',
+        "HOST": "localhost",
+        "PORT": "",
+        "USER": "",
+        "PASSWORD": "",
+        "OPTIONS": {"driver": "ODBC Driver 18 for SQL Server",
+                    'extra_params':'Encrypt=no' 
+        },
     }
 }
 
