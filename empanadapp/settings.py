@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard.apps.DashboardConfig',
-    'adminpanel.apps.AdminpanelConfig'
+    'user.apps.UserConfig',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'reports.apps.ReportsConfig',
+    'stock.apps.StockConfig',
+    'sales.apps.SalesConfig',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +139,11 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+LOGOUT_REDIRECT_URL = 'userlogout'
+
+LOGIN_REDIRECT_URL = 'index'
+
+LOGIN_URL = 'userlogin'

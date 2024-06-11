@@ -11,6 +11,7 @@ class Paymentmethods(models.Model):
     class Meta:
         managed = False
         db_table = 'PaymentMethods'
+        verbose_name_plural = "Payment methods"
 
 
 class Products(models.Model):
@@ -21,6 +22,7 @@ class Products(models.Model):
     class Meta:
         managed = False
         db_table = 'Products'
+        verbose_name_plural  = 'Products'
 
 
 class Reports(models.Model):
@@ -31,6 +33,7 @@ class Reports(models.Model):
     class Meta:
         managed = False
         db_table = 'Reports'
+        verbose_name_plural  = "Reports"
 
 
 class Sales(models.Model):
@@ -43,6 +46,7 @@ class Sales(models.Model):
     class Meta:
         managed = False
         db_table = 'Sales'
+        verbose_name_plural  = "Sales"
 
 
 class Salesdetails(models.Model):
@@ -55,6 +59,7 @@ class Salesdetails(models.Model):
     class Meta:
         managed = False
         db_table = 'SalesDetails'
+        verbose_name_plural  = "Sales details"
 
 
 class Stock(models.Model):
@@ -64,6 +69,7 @@ class Stock(models.Model):
     class Meta:
         managed = False
         db_table = 'Stock'
+        verbose_name_plural  = "Stock"
 
 
 class Stockhistory(models.Model):
@@ -77,6 +83,7 @@ class Stockhistory(models.Model):
     class Meta:
         managed = False
         db_table = 'StockHistory'
+        verbose_name_plural  = "Stock history"
 
 
 class Users(models.Model):
