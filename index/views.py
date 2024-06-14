@@ -7,6 +7,8 @@ from django.contrib.auth import logout
 
 
 # Create your views here.
+def index(request):
+    return render(request, 'index.html')
 
 def userlogout(request):
     logout(request)
@@ -14,10 +16,6 @@ def userlogout(request):
 
 def userlogin(request):
     return render(request, 'userlogin.html')
-
-def index(request):
-    return render(request, 'index.html')
-
 
 
 # sql queries

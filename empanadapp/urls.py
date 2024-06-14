@@ -18,10 +18,18 @@ from django.contrib import admin
 from django.urls import path, include
 from index import views as dash_views
 from django.contrib.auth import views as auth_views
+from index import views as index_views
+from stock import views as stock_views
+from sales import views as sales_views
+from reports import views as reports_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('index.urls')),
+    path('', index_views.index, name='index'),
+    path('stock/', stock_views.stock, name='stock'),
+    path('sales/', sales_views.sales, name='sales'),
+    path('reports/', reports_views.reports, name='reports'),
     path('login/', auth_views.LoginView.as_view(template_name='userlogin.html'), name='userlogin'),
     path('logout/', dash_views.userlogout, name='userlogout'),
 ]
+

@@ -5,5 +5,6 @@ from django.db import connection
 # Create your views here.
 
 @login_required
+@permission_required('reports.view_reports')
 def reports(request):
     return render(request, 'reports.html')
