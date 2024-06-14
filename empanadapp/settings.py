@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dashboard.apps.DashboardConfig',
+    'index.apps.IndexConfig',
     'user.apps.UserConfig',
     'crispy_forms',
     'crispy_bootstrap5',
@@ -70,9 +70,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-        },
     },
-]
+},]
 
 WSGI_APPLICATION = 'empanadapp.wsgi.application'
 
